@@ -61,8 +61,6 @@ void connectWiFi() {
    }
   }
 
-//  Note: several more test audio files can be found here: 
-//  https://github.com/schreibfaul1/ESP32-audioI2S/tree/master/additional_info/Testfiles
 void connect(Audio *audio, int channel) {
   switch (channel){
   
@@ -70,28 +68,22 @@ void connect(Audio *audio, int channel) {
     case 1:
           (*audio).connecttohost("http://vis.media-ice.musicradio.com/CapitalMP3");
           break;
-
     case 2:
           (*audio).connecttohost("http://s2.free-shoutcast.com:18146/");
           break;
-      
     case 3:
           (*audio).connecttohost("http://server.geetradio.com:8020/radio.mp3");
           break;
-  
-    case 4:
+      case 4:
           (*audio).connecttohost("http://69.162.124.24:8888/Malayalam");
           break;
-  
-    case 5:
+      case 5:
           (*audio).connecttohost("https://eu10.fastcast4u.com:2140/");
           break;
-
     case 6:
           (*audio).connecttohost("http://173.249.30.175:8000/");
           break;
-    
-  }
+   }
 
 }
 
