@@ -25,8 +25,8 @@ ezButton upButton(CHAN_UP_PIN);
 
 int currentChannelNumber = 1;
 
-const String ssid         = "KrishnaGW";   //wifi network name 
-const String password     = "jk88!@#THk215";  //wifi password
+const String ssid         = "**********";   //wifi network name 
+const String password     = "**********";  //wifi password
 
 Audio audio;  //class from the ESP32-audioI2S library
 
